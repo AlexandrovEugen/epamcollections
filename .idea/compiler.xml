@@ -10,8 +10,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="castomhashmap" target="1.5" />
-      <module name="epamcollections" target="1.5" />
+      <module name="castomhashmap" target="1.8" />
+      <module name="epamcollections" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
