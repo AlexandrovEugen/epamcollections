@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2df8fa6-93b3-4457-95cb-854a7aa8e5c1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/castomhashmap/target/test-classes/com/epam/java/se/CustomHashMapTest.class" afterPath="$PROJECT_DIR$/castomhashmap/target/test-classes/com/epam/java/se/CustomHashMapTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java" afterPath="$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java" afterPath="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java" />
     </list>
@@ -25,49 +27,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomHashMap.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomHashMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+            <state relative-caret-position="721">
+              <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="method#containsKey#0;class#CustomHashMap#0" expanded="false" />
+                <element signature="method#get#0;class#CustomHashMap#0" expanded="false" />
+                <element signature="method#remove#0;class#CustomHashMap#0" expanded="false" />
                 <element signature="method#putAll#0;class#CustomHashMap#0" expanded="false" />
                 <element signature="method#clear#0;class#CustomHashMap#0" expanded="false" />
-                <element signature="e#4709#4710#0" expanded="true" />
-                <element signature="e#4757#4758#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomHashMapTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7986">
-              <caret line="844" column="13" lean-forward="true" selection-start-line="844" selection-start-column="13" selection-end-line="844" selection-end-column="13" />
-              <folding>
-                <element signature="e#23597#23598#0" expanded="true" />
-                <element signature="e#23651#23652#0" expanded="true" />
-                <element signature="e#24298#24299#0" expanded="true" />
-                <element signature="e#24363#24364#0" expanded="true" />
+                <element signature="e#5194#5195#0" expanded="true" />
+                <element signature="e#5242#5243#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +120,7 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -158,34 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epamcollections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="castomhashmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="epamcollections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="castomhashmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.epam.java.se" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,10 +160,124 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="castomhashmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="castomhashmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="castomhashmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="castomhashmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamcollections" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="castomhashmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.epam.java.se" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -718,44 +780,45 @@
       <option name="presentableId" value="Default" />
       <updated>1490385452396</updated>
       <workItem from="1490385455813" duration="26853000" />
-      <workItem from="1490632428453" duration="22277000" />
+      <workItem from="1490632428453" duration="23416000" />
+      <workItem from="1490695890503" duration="7294000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 02h 30m 36s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 13m 57s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 02h 36m 58s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 23m 49s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 02h 45m 56s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 35m 20s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 02h 50m 29s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 37m 08s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 03h 03m 16s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 37m 18s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 04h 09m 09s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 37m 48s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 04h 16m 47s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 38m 17s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 04h 17m 28s.xml">
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 15h 43m 03s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest_testThatMethodGetReturnValueIfiItExists - 2017.03.28 at 02h 25m 37s.xml">
-      <configuration name="CustomHashMapTest.testThatMethodGetReturnValueIfiItExists" configurationId="JUnit" />
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 16h 22m 13s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomHashMapTest_testThatMethodGetReturnValueIfiItExists - 2017.03.28 at 02h 30m 09s.xml">
-      <configuration name="CustomHashMapTest.testThatMethodGetReturnValueIfiItExists" configurationId="JUnit" />
+    <history-entry file="CustomHashMapTest - 2017.03.28 at 16h 22m 50s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49130000" />
+    <option name="totallyTimeSpent" value="57563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,7 +830,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -787,7 +850,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -809,7 +872,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -820,19 +883,61 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="method#containsKey#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#remove#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#putAll#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#clear#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="e#5194#5195#0" expanded="true" />
+            <element signature="e#5242#5243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5746">
+          <caret line="338" column="5" lean-forward="true" selection-start-line="335" selection-start-column="4" selection-end-line="338" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="method#containsKey#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#remove#0;class#CustomHashMap#0" expanded="false" />
             <element signature="method#putAll#0;class#CustomHashMap#0" expanded="false" />
             <element signature="method#clear#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="e#4709#4710#0" expanded="true" />
-            <element signature="e#4757#4758#0" expanded="true" />
+            <element signature="e#5194#5195#0" expanded="true" />
+            <element signature="e#5242#5243#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -842,7 +947,10 @@
         <state relative-caret-position="1139">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -867,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="492" column="47" lean-forward="true" selection-start-line="492" selection-start-column="47" selection-end-line="492" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,64 +1011,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding>
-            <element signature="e#5329#5330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7986">
-          <caret line="844" column="13" lean-forward="true" selection-start-line="844" selection-start-column="13" selection-end-line="844" selection-end-column="13" />
-          <folding>
-            <element signature="e#23597#23598#0" expanded="true" />
-            <element signature="e#23651#23652#0" expanded="true" />
-            <element signature="e#24298#24299#0" expanded="true" />
-            <element signature="e#24363#24364#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-5932">
+          <caret line="246" column="38" lean-forward="false" selection-start-line="246" selection-start-column="38" selection-end-line="246" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="method#putAll#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="method#clear#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="e#4709#4710#0" expanded="true" />
-            <element signature="e#4757#4758#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+        <state relative-caret-position="-84">
+          <caret line="54" column="53" lean-forward="false" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding>
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="method#containsKey#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#get#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#remove#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#putAll#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="method#clear#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="e#5194#5195#0" expanded="true" />
+            <element signature="e#5242#5243#0" expanded="true" />
           </folding>
         </state>
       </provider>

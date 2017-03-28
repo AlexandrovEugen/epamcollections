@@ -3,7 +3,6 @@ package com.epam.java.se;
 
 import org.junit.Before;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.*;
@@ -13,52 +12,62 @@ import static org.junit.Assert.*;
 @FixMethodOrder
 public class CustomHashMapTest {
 
-    private CustomHashMap<Integer,String> hashMap;
+    private CustomHashMap<Integer, String> hashMap;
 
     @Before
-    public void init(){
+    public void init() {
         hashMap = new CustomHashMap<>();
     }
 
     @Test
-    public void testThatThisClassCanInitializeObject(){
+    public void testThatThisClassCanInitializeObject() {
         assertThat(hashMap, is(notNullValue()));
     }
 
     @Test
-    public void testThatJustInitializedMapIsEmpty(){
+    public void testThatJustInitializedMapIsEmpty() {
         assertTrue(hashMap.isEmpty());
     }
 
     @Test
-    public void testThatInNewMapContainsKeyReturnsFalseForAnyElement(){
+    public void testThatInNewMapContainsKeyReturnsFalseForAnyElement() {
         assertThat(hashMap.containsKey(1), is(false));
     }
 
     @Test
-    public void testThatInNewMapContainsValueReturnFalseForAnyElement(){
+    public void testThatInNewMapContainsValueReturnFalseForAnyElement() {
         assertThat(hashMap.containsValue("empty"), is(false));
     }
 
     @Test
-    public void testThatPutMethodWorksRight(){
+    public void testThatPutMethodWorksRight() {
         hashMap.put(1, "first");
         hashMap.containsKey(1);
     }
 
+
+    @Test
+    public void testThatIsKeyExistThatMethodPutAddNewValueAndGetOld() {
+        hashMap.put(1, "first");
+        assertTrue(hashMap.containsValue("first"));
+        assertEquals("first", hashMap.put(1, "second"));
+        assertFalse(hashMap.containsValue("first"));
+        assertThat(hashMap.get(1), is(equalTo("second")));
+    }
+
     @Test(expected = NullPointerException.class)
-    public void testThatUnableToPutNullKey(){
+    public void testThatUnableToPutNullKey() {
         hashMap.put(null, null);
     }
 
     @Test
-    public void testThatPutMethodAllowsToAddNullValue(){
+    public void testThatPutMethodAllowsToAddNullValue() {
         hashMap.put(1, null);
         assertThat(hashMap.isEmpty(), is(false));
     }
 
     @Test
-    public void testThatMethodGetReturnValueIfiItExists(){
+    public void testThatMethodGetReturnValueIfiItExists() {
         assertTrue(hashMap.isEmpty());
         hashMap.put(1, "get");
         hashMap.put(2, "set");
@@ -66,11 +75,11 @@ public class CustomHashMapTest {
         hashMap.put(4, "ret");
         hashMap.put(5, "met");
         assertFalse(hashMap.isEmpty());
-        assertThat(hashMap.get(5),is(equalTo("met")));
+        assertThat(hashMap.get(5), is(equalTo("met")));
     }
 
     @Test
-    public void testThatRemoveMethodWorksRight(){
+    public void testThatRemoveMethodWorksRight() {
         assertTrue(hashMap.isEmpty());
         hashMap.put(1, "get");
         hashMap.put(2, "set");
@@ -87,13 +96,7 @@ public class CustomHashMapTest {
     }
 
     @Test
-    public void testThatInOneBucketCanHAsOneOrMoreValuesDependsOnGashOfKey(){
-
-    }
-
-    @Ignore
-    @Test
-    public void testThatSizeCanWentToOutOfDefaultSize(){
+    public void testThatSizeCanWentToOutOfDefaultBucketsLength() {
         hashMap.put(1, "a");
         hashMap.put(2, "b");
         hashMap.put(3, "c");
@@ -114,6 +117,7 @@ public class CustomHashMapTest {
         hashMap.put(18, "r");
         hashMap.put(19, "s");
         hashMap.put(20, "t");
-        assertEquals(20, hashMap.size());
+        hashMap.put(21, "u");
+        assertEquals(21, hashMap.size());
     }
 }

@@ -8,16 +8,18 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     private final Entry<K, V>[] buckets;
     private int size;
-    private Set<K> keySet = new HashSet<>();
+    private Set<K> keySet;
     private Collection<V> values;
 
     public CustomHashMap() {
         buckets = new Entry[16];
     }
 
-    private static int hash(Object key) {
-        int h;
-        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
+    private int hash(Object key) {
+        int h = key.hashCode();
+        h ^= (h >>> 20) ^ (h >>> 12);
+        int hashCode = h ^ (h >>> 7) ^ (h >>> 4);
+        return hashCode % buckets.length;
     }
 
     public int size() {
@@ -101,14 +103,27 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     public V put(K key, V value) {
         Objects.requireNonNull(key);
+        V oldValue;
         int index = hash(key);
+        System.out.println(index);
         if (buckets[index] == null) {
             buckets[index] = new Entry<>(key, value);
             size++;
         } else {
             Entry<K, V> entry = buckets[index];
+            if (entry.key.equals(key)){
+                oldValue = entry.value;
+                entry.value = value;
+                return oldValue;
+            }
             while (entry.hasNext()) {
-                entry = entry.next;
+                if (entry.key.equals(key)) {
+                    oldValue = entry.value;
+                    entry.value = value;
+                    return oldValue;
+                } else {
+                    entry = entry.next;
+                }
             }
             entry.setNext(new Entry<>(key, value));
             size++;
