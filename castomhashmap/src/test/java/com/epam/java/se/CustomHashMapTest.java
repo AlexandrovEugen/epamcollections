@@ -3,14 +3,12 @@ package com.epam.java.se;
 
 import org.junit.Before;
 import org.junit.FixMethodOrder;
+import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 @FixMethodOrder
 public class CustomHashMapTest {
@@ -80,9 +78,42 @@ public class CustomHashMapTest {
         hashMap.put(4, "ret");
         hashMap.put(5, "met");
         assertFalse(hashMap.isEmpty());
+        assertEquals(5, hashMap.size());
         assertTrue(hashMap.containsKey(1));
         assertTrue(hashMap.containsValue("get"));
         hashMap.remove(1);
         assertFalse(hashMap.containsValue("get"));
+        assertEquals(4, hashMap.size());
+    }
+
+    @Test
+    public void testThatInOneBucketCanHAsOneOrMoreValuesDependsOnGashOfKey(){
+
+    }
+
+    @Ignore
+    @Test
+    public void testThatSizeCanWentToOutOfDefaultSize(){
+        hashMap.put(1, "a");
+        hashMap.put(2, "b");
+        hashMap.put(3, "c");
+        hashMap.put(4, "d");
+        hashMap.put(5, "e");
+        hashMap.put(6, "f");
+        hashMap.put(7, "g");
+        hashMap.put(8, "h");
+        hashMap.put(9, "i");
+        hashMap.put(10, "j");
+        hashMap.put(11, "k");
+        hashMap.put(12, "l");
+        hashMap.put(13, "m");
+        hashMap.put(14, "n");
+        hashMap.put(15, "o");
+        hashMap.put(16, "p");
+        hashMap.put(17, "q");
+        hashMap.put(18, "r");
+        hashMap.put(19, "s");
+        hashMap.put(20, "t");
+        assertEquals(20, hashMap.size());
     }
 }

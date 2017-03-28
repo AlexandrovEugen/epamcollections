@@ -1,23 +1,23 @@
 package com.epam.java.se;
 
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 
 public class CustomHashMap<K, V> implements Map<K, V> {
 
     private final Entry<K, V>[] buckets;
     private int size;
+    private Set<K> keySet = new HashSet<>();
+    private Collection<V> values;
 
     public CustomHashMap() {
         buckets = new Entry[16];
     }
 
-    public CustomHashMap(int CAPACITY) {
-        buckets = new Entry[CAPACITY];
+    private static int hash(Object key) {
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
     }
 
     public int size() {
@@ -32,9 +32,21 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         if (isEmpty()) {
             return false;
         }
-        for (int i = 0; i < size; i++) {
-            if (buckets[i].key.equals(key)) {
+        int index = hash(key);
+        if (buckets[index] == null) {
+            return false;
+        } else {
+            Entry<K, V> entry = buckets[index];
+            if (entry.key.equals(key)) {
                 return true;
+            } else {
+                while (entry.hasNext()) {
+                    if (entry.next.key.equals(key)) {
+                        return true;
+                    } else {
+                        entry = entry.next;
+                    }
+                }
             }
         }
         return false;
@@ -44,9 +56,22 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         if (isEmpty()) {
             return false;
         }
-        for (int i = 0; i < size; i++) {
-            if (buckets[i].value.equals(value)) {
-                return true;
+        for (Entry<K, V> bucket : buckets) {
+            if (bucket == null) {
+                continue;
+            } else {
+                Entry<K, V> entry = bucket;
+                if (entry.value.equals(value)) {
+                    return true;
+                } else {
+                    while (entry.hasNext()) {
+                        if (entry.next.value.equals(value)) {
+                            return true;
+                        } else {
+                            entry = entry.next;
+                        }
+                    }
+                }
             }
         }
         return false;
@@ -54,9 +79,21 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     public V get(Object key) {
         Objects.requireNonNull(key);
-        for (int i = 0; i < size; i++) {
-            if (buckets[i].key.equals(key)) {
-                return buckets[i].value;
+        int index = hash(key);
+        if (buckets[index] == null) {
+            return null;
+        } else {
+            Entry<K, V> entry = buckets[index];
+            if (entry.key.equals(key)) {
+                return entry.value;
+            } else {
+                while (entry.hasNext()) {
+                    if (entry.next.key.equals(key)) {
+                        return entry.next.value;
+                    } else {
+                        entry = entry.next;
+                    }
+                }
             }
         }
         return null;
@@ -64,30 +101,51 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     public V put(K key, V value) {
         Objects.requireNonNull(key);
-        buckets[size] = new Entry<>(key, value);
-        size = size + 1;
+        int index = hash(key);
+        if (buckets[index] == null) {
+            buckets[index] = new Entry<>(key, value);
+            size++;
+        } else {
+            Entry<K, V> entry = buckets[index];
+            while (entry.hasNext()) {
+                entry = entry.next;
+            }
+            entry.setNext(new Entry<>(key, value));
+            size++;
+        }
         return null;
     }
 
     public V remove(Object key) {
         Objects.requireNonNull(key);
-        int moveIndex = -1;
-        int index = -1;
-        V removed = null;
-
-        for (int i = 0; i < size; i++) {
-            if (buckets[i].key.equals(key)) {
-                index = i;
-                moveIndex = size - index - 1;
-                removed = buckets[i].value;
+        int index = hash(key);
+        V removed;
+        if (buckets[index] == null) {
+            return null;
+        } else {
+            if (buckets[index].key.equals(key)) {
+                if (!buckets[index].hasNext()) {
+                    removed = buckets[index].value;
+                    buckets[index] = null;
+                    size--;
+                    return removed;
+                } else {
+                    Entry<K, V> entry = buckets[index];
+                    Entry<K, V> parent;
+                    while (entry.hasNext()) {
+                        parent = entry;
+                        entry = entry.next;
+                        if (entry.key.equals(key)) {
+                            removed = entry.value;
+                            parent.next = entry.next;
+                            size--;
+                            return removed;
+                        }
+                    }
+                }
             }
         }
-        if (moveIndex > 0) {
-            System.arraycopy(buckets, index + 1, buckets, index, moveIndex);
-        }
-        buckets[--size] = null;
-
-        return removed;
+        return null;
     }
 
     public void putAll(Map<? extends K, ? extends V> m) {
@@ -108,6 +166,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         return null;
     }
 
+
     private class Entry<K, V> {
 
         private final K key;
@@ -122,10 +181,6 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
         public boolean hasNext() {
             return this.next != null;
-        }
-
-        public Entry<K, V> next() {
-            return next;
         }
 
         public void setNext(Entry<K, V> next) {
