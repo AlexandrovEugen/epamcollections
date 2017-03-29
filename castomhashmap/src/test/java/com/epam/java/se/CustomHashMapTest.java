@@ -120,4 +120,18 @@ public class CustomHashMapTest {
         hashMap.put(21, "u");
         assertEquals(21, hashMap.size());
     }
+
+    @Test
+    public void testThatAfterClearMethodMapWillBeEmpty(){
+        hashMap.put(1, "a");
+        hashMap.put(2, "b");
+        hashMap.put(3, "c");
+        hashMap.put(4, "d");
+        hashMap.put(5, "e");
+        hashMap.put(6, "f");
+        hashMap.put(7, "g");
+        assertEquals(7, hashMap.size());
+        hashMap.clear();
+        assertTrue(hashMap.isEmpty());
+    }
 }
