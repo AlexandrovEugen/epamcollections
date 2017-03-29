@@ -8,6 +8,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     private Entry<K, V>[] buckets;
     private int size;
+    private Set<Map.Entry<K, V>> entrySet;
     private Set<K> keySet;
     private Collection<V> values;
 
@@ -107,7 +108,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         int index = hash(key);
         System.out.println(index);
         if (buckets[index] == null) {
-            buckets[index] = new Entry<>(key, value);
+            buckets[index] = new Entry<>(key, value, index);
             size++;
         } else {
             Entry<K, V> entry = buckets[index];
@@ -125,7 +126,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
                     entry = entry.next;
                 }
             }
-            entry.setNext(new Entry<>(key, value));
+            entry.setNext(new Entry<>(key, value, index));
             size++;
         }
         return null;
@@ -180,17 +181,31 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     }
 
     public Set<Map.Entry<K, V>> entrySet() {
-        return null;
+        entrySet = new HashSet<>();
+        for (Entry<K, V> bucket : buckets) {
+            if (bucket != null) {
+                Entry<K, V> entry = bucket;
+                entrySet.add(entry);
+                while (entry.hasNext()) {
+                    entry = entry.next;
+                    entrySet.add(entry);
+                }
+            }
+        }
+        return entrySet;
     }
 
     static class Entry<K, V> implements Map.Entry<K, V> {
 
+        private final int hashcode;
         private final K key;
         private V value;
 
         private Entry<K, V> next = null;
 
-        private Entry(K key, V value) {
+        private Entry(K key, V value, int hashcode) {
+            Objects.requireNonNull(key);
+            this.hashcode = hashcode;
             this.key = key;
             this.value = value;
         }
@@ -215,6 +230,26 @@ public class CustomHashMap<K, V> implements Map<K, V> {
             V oldValue = this.value;
             this.value = value;
             return oldValue;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = hashcode;
+            result = 31 * result + key.hashCode();
+            result = 31 * result + value.hashCode();
+            return result;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            Entry<K, V> entry = (Entry<K, V>) o;
+            if (key.equals(entry.getKey())) return false;
+            if (value.equals(entry.getValue())) return false;
+            if (!next.equals(entry.next)) return false;
+            return hashcode == entry.hashcode;
         }
     }
 }

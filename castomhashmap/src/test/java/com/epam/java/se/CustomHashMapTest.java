@@ -5,6 +5,9 @@ import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 
+import java.util.Map;
+import java.util.Set;
+
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.*;
@@ -133,5 +136,42 @@ public class CustomHashMapTest {
         assertEquals(7, hashMap.size());
         hashMap.clear();
         assertTrue(hashMap.isEmpty());
+    }
+
+    @Test
+    public void testThatEntrySetContainsAllKeyValuePairs(){
+        hashMap.put(1, "a");
+        hashMap.put(2, "b");
+        hashMap.put(3, "c");
+        hashMap.put(4, "d");
+        hashMap.put(5, "e");
+        hashMap.put(6, "f");
+        hashMap.put(7, "g");
+        hashMap.put(8, "h");
+        hashMap.put(9, "i");
+
+        Set<Map.Entry<Integer, String>> entrySet = hashMap.entrySet();
+        for (Map.Entry<Integer, String> entry: entrySet){
+            assertTrue(hashMap.containsKey(entry.getKey()));
+            assertTrue(hashMap.containsValue(entry.getValue()));
+        }
+    }
+
+    @Test
+    public void testThatKeySetContainsAllKeyFromMap(){
+        hashMap.put(1, "a");
+        hashMap.put(2, "b");
+        hashMap.put(3, "c");
+        hashMap.put(4, "d");
+        hashMap.put(5, "e");
+        hashMap.put(6, "f");
+        hashMap.put(7, "g");
+        hashMap.put(8, "h");
+        hashMap.put(9, "i");
+
+        Set<Integer> keySet = hashMap.keySet();
+        for (Integer key: keySet) {
+            assertTrue(hashMap.containsKey(key));
+        }
     }
 }

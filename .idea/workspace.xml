@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2df8fa6-93b3-4457-95cb-854a7aa8e5c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java" afterPath="$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java" afterPath="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java" />
     </list>
@@ -26,53 +25,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomHashMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomHashMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+            <state relative-caret-position="157">
+              <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
               <folding>
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
                 <element signature="method#hash#0;class#CustomHashMap#0" expanded="false" />
-                <element signature="e#5350#5351#0" expanded="true" />
-                <element signature="e#5398#5399#0" expanded="true" />
-                <element signature="e#5448#5449#0" expanded="true" />
-                <element signature="e#5488#5489#0" expanded="true" />
-                <element signature="e#5517#5518#0" expanded="true" />
-                <element signature="e#5551#5552#0" expanded="true" />
-                <element signature="e#5582#5583#0" expanded="true" />
-                <element signature="e#5618#5619#0" expanded="true" />
+                <element signature="method#Entry#0;class#Entry#0;class#CustomHashMap#0" expanded="false" />
+                <element signature="e#5901#5902#0" expanded="true" />
+                <element signature="e#5949#5950#0" expanded="true" />
+                <element signature="e#5999#6000#0" expanded="true" />
+                <element signature="e#6039#6040#0" expanded="true" />
+                <element signature="e#6068#6069#0" expanded="true" />
+                <element signature="e#6102#6103#0" expanded="true" />
+                <element signature="e#6133#6134#0" expanded="true" />
+                <element signature="e#6169#6170#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="276" column="7" lean-forward="true" selection-start-line="276" selection-start-column="7" selection-end-line="276" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomHashMapTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomHashMapTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+            <state relative-caret-position="531">
+              <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -102,8 +82,8 @@
         <option value="$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CastomHashMap.java" />
         <option value="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CastomHashMapTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java" />
         <option value="$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java" />
+        <option value="$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java" />
       </list>
     </option>
   </component>
@@ -811,29 +791,11 @@
       <workItem from="1490385455813" duration="26853000" />
       <workItem from="1490632428453" duration="23416000" />
       <workItem from="1490695890503" duration="7355000" />
-      <workItem from="1490707716606" duration="7624000" />
+      <workItem from="1490707716606" duration="12529000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 16h 22m 13s.xml">
-      <configuration name="CustomHashMapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 16h 22m 50s.xml">
-      <configuration name="CustomHashMapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 16h 34m 31s.xml">
-      <configuration name="CustomHashMapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.28 at 16h 34m 39s.xml">
-      <configuration name="CustomHashMapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.29 at 19h 58m 56s.xml">
-      <configuration name="CustomHashMapTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomHashMapTest - 2017.03.29 at 19h 59m 34s.xml">
-      <configuration name="CustomHashMapTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomHashMapTest - 2017.03.29 at 19h 59m 55s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
@@ -846,9 +808,27 @@
     <history-entry file="CustomHashMapTest - 2017.03.29 at 21h 07m 06s.xml">
       <configuration name="CustomHashMapTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomHashMapTest - 2017.03.29 at 21h 52m 25s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomHashMapTest - 2017.03.29 at 22h 10m 16s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomHashMapTest - 2017.03.29 at 22h 17m 10s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomHashMapTest - 2017.03.29 at 22h 23m 51s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomHashMapTest - 2017.03.29 at 22h 24m 11s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomHashMapTest - 2017.03.29 at 22h 28m 54s.xml">
+      <configuration name="CustomHashMapTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65248000" />
+    <option name="totallyTimeSpent" value="70153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,17 +896,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
             <element signature="method#hash#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="e#5350#5351#0" expanded="true" />
-            <element signature="e#5398#5399#0" expanded="true" />
-            <element signature="e#5448#5449#0" expanded="true" />
-            <element signature="e#5488#5489#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5551#5552#0" expanded="true" />
-            <element signature="e#5582#5583#0" expanded="true" />
-            <element signature="e#5618#5619#0" expanded="true" />
+            <element signature="method#Entry#0;class#Entry#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#5949#5950#0" expanded="true" />
+            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#6039#6040#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#6102#6103#0" expanded="true" />
+            <element signature="e#6133#6134#0" expanded="true" />
+            <element signature="e#6169#6170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,17 +917,18 @@
         <state relative-caret-position="255">
           <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
             <element signature="method#hash#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="e#5350#5351#0" expanded="true" />
-            <element signature="e#5398#5399#0" expanded="true" />
-            <element signature="e#5448#5449#0" expanded="true" />
-            <element signature="e#5488#5489#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5551#5552#0" expanded="true" />
-            <element signature="e#5582#5583#0" expanded="true" />
-            <element signature="e#5618#5619#0" expanded="true" />
+            <element signature="method#Entry#0;class#Entry#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#5949#5950#0" expanded="true" />
+            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#6039#6040#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#6102#6103#0" expanded="true" />
+            <element signature="e#6133#6134#0" expanded="true" />
+            <element signature="e#6169#6170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -956,10 +938,10 @@
         <state relative-caret-position="1496">
           <caret line="96" column="21" lean-forward="false" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
           <folding>
-            <element signature="e#379#380#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#1529#1530#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -977,17 +959,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
             <element signature="method#hash#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="e#5350#5351#0" expanded="true" />
-            <element signature="e#5398#5399#0" expanded="true" />
-            <element signature="e#5448#5449#0" expanded="true" />
-            <element signature="e#5488#5489#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5551#5552#0" expanded="true" />
-            <element signature="e#5582#5583#0" expanded="true" />
-            <element signature="e#5618#5619#0" expanded="true" />
+            <element signature="method#Entry#0;class#Entry#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#5949#5950#0" expanded="true" />
+            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#6039#6040#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#6102#6103#0" expanded="true" />
+            <element signature="e#6133#6134#0" expanded="true" />
+            <element signature="e#6169#6170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -997,10 +980,10 @@
         <state relative-caret-position="1139">
           <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
-            <element signature="e#379#380#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
-            <element signature="e#614#615#0" expanded="false" />
-            <element signature="e#1529#1530#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1063,47 +1046,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="306" column="0" lean-forward="true" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        <state relative-caret-position="-2659">
+          <caret line="136" column="13" lean-forward="false" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="276" column="7" lean-forward="true" selection-start-line="276" selection-start-column="7" selection-end-line="276" selection-end-column="7" />
+        <state relative-caret-position="61">
+          <caret line="120" column="12" lean-forward="true" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/castomhashmap/src/main/java/com/epam/java/se/CustomHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="66" column="25" lean-forward="false" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        <state relative-caret-position="157">
+          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
           <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
             <element signature="method#hash#0;class#CustomHashMap#0" expanded="false" />
-            <element signature="e#5350#5351#0" expanded="true" />
-            <element signature="e#5398#5399#0" expanded="true" />
-            <element signature="e#5448#5449#0" expanded="true" />
-            <element signature="e#5488#5489#0" expanded="true" />
-            <element signature="e#5517#5518#0" expanded="true" />
-            <element signature="e#5551#5552#0" expanded="true" />
-            <element signature="e#5582#5583#0" expanded="true" />
-            <element signature="e#5618#5619#0" expanded="true" />
+            <element signature="method#Entry#0;class#Entry#0;class#CustomHashMap#0" expanded="false" />
+            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#5949#5950#0" expanded="true" />
+            <element signature="e#5999#6000#0" expanded="true" />
+            <element signature="e#6039#6040#0" expanded="true" />
+            <element signature="e#6068#6069#0" expanded="true" />
+            <element signature="e#6102#6103#0" expanded="true" />
+            <element signature="e#6133#6134#0" expanded="true" />
+            <element signature="e#6169#6170#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/castomhashmap/src/test/java/com/epam/java/se/CustomHashMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="175" column="5" lean-forward="true" selection-start-line="175" selection-start-column="5" selection-end-line="175" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
