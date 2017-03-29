@@ -173,7 +173,12 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     }
 
     public Set<K> keySet() {
-        return null;
+        Set<Map.Entry<K, V>> entrySet = entrySet();
+        keySet = new HashSet<>();
+        for (Map.Entry<K, V> entry: entrySet ){
+            keySet.add(entry.getKey());
+        }
+        return keySet;
     }
 
     public Collection<V> values() {
