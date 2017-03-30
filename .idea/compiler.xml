@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="castomhashmap" />
+        <module name="castomtreemap" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="castomhashmap" target="1.8" />
+      <module name="castomtreemap" target="1.8" />
       <module name="epamcollections" target="1.8" />
     </bytecodeTargetLevel>
   </component>
