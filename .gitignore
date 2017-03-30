@@ -1,6 +1,8 @@
 .idea/
-*/target/*
-*.iml
 castomhashmap/src/main/resources/
 castomtreemap/src/main/resources/
 castomtreemap/target/
+/castomtreemap/castomtreemap.iml
+/castomhashmap/castomhashmap.iml
+/epamcollections.iml
+
