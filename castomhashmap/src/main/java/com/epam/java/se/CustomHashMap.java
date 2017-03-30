@@ -8,9 +8,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     private Entry<K, V>[] buckets;
     private int size;
-    private Set<Map.Entry<K, V>> entrySet;
-    private Set<K> keySet;
-    private Collection<V> values;
+    private Collection<V> values = new Values();
 
     public CustomHashMap() {
         buckets = new Entry[16];
@@ -106,7 +104,6 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         Objects.requireNonNull(key);
         V oldValue;
         int index = hash(key);
-        System.out.println(index);
         if (buckets[index] == null) {
             buckets[index] = new Entry<>(key, value, index);
             size++;
@@ -167,7 +164,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     public void putAll(Map<? extends K, ? extends V> m) {
         Set<? extends Map.Entry<? extends K, ? extends V>> entries = m.entrySet();
         for (Map.Entry<? extends K, ? extends V> entry : entries) {
-            this.put(entry.getKey(),entry.getValue());
+            this.put(entry.getKey(), entry.getValue());
         }
     }
 
@@ -178,7 +175,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
 
     public Set<K> keySet() {
         Set<Map.Entry<K, V>> entrySet = entrySet();
-        keySet = new HashSet<>();
+        Set<K> keySet = new HashSet<>();
         for (Map.Entry<K, V> entry : entrySet) {
             keySet.add(entry.getKey());
         }
@@ -186,12 +183,11 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     }
 
     public Collection<V> values() {
-        // TODO: 30.03.2017
-      return null;
+        return values;
     }
 
     public Set<Map.Entry<K, V>> entrySet() {
-        entrySet = new HashSet<>();
+        Set<Map.Entry<K, V>> entrySet = new HashSet<>();
         for (Entry<K, V> bucket : buckets) {
             if (bucket != null) {
                 Entry<K, V> entry = bucket;
@@ -261,5 +257,73 @@ public class CustomHashMap<K, V> implements Map<K, V> {
             if (!next.equals(entry.next)) return false;
             return hashcode == entry.hashcode;
         }
+    }
+
+    class Values extends AbstractCollection<V>{
+
+        @Override
+        public Iterator<V> iterator() {
+            return new ValueIterator();
+        }
+
+        @Override
+        public int size() {
+            return CustomHashMap.this.size();
+        }
+
+        @Override
+        public void clear(){
+            CustomHashMap.this.clear();
+        }
+
+        @Override
+        public boolean contains(Object o){
+            return CustomHashMap.this.containsValue(o);
+        }
+    }
+
+
+    class ValueIterator extends HashIterator implements Iterator<V>{
+        @Override
+        public V next() {
+            return  nextEntry().getValue();
+        }
+    }
+    abstract class HashIterator {
+        Entry<K, V> next;
+
+        int index;
+
+        HashIterator() {
+            Entry<K, V>[] aBuckets = buckets;
+            next = null;
+            index = 0;
+            if (aBuckets != null && size > 0) {
+                next = aBuckets[index];
+                while (index < aBuckets.length && next != null) {
+                    next = aBuckets[index++];
+                }
+            }
+        }
+
+        public boolean hasNext() {
+            return next != null;
+        }
+        Entry<K, V> nextEntry() {
+            Entry<K, V>[] aBucket = buckets;
+            Entry<K, V> e = next;
+            if (e == null) {
+                throw new NoSuchElementException();
+            }
+            next = e.next;
+            if (next == null && aBucket != null) {
+                next = aBucket[index];
+                while (index < aBucket.length && next != null){
+                    next = aBucket[index++];
+                }
+            }
+            return e;
+        }
+
     }
 }
