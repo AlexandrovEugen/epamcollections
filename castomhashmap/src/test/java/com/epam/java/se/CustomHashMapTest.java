@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
@@ -172,6 +173,49 @@ public class CustomHashMapTest {
         Set<Integer> keySet = hashMap.keySet();
         for (Integer key: keySet) {
             assertTrue(hashMap.containsKey(key));
+        }
+    }
+
+    @Test
+    public void testThatAllEntriesFromAnotherMapAreContainedInThis(){
+        Map<Integer, String> anotherMap = new CustomHashMap<>();
+        anotherMap.put(1, "a");
+        anotherMap.put(2, "b");
+        anotherMap.put(3, "c");
+        anotherMap.put(4, "d");
+        anotherMap.put(5, "e");
+        anotherMap.put(6, "f");
+        anotherMap.put(7, "g");
+        anotherMap.put(8, "h");
+        anotherMap.put(9, "i");
+        assertTrue(hashMap.isEmpty());
+        hashMap.putAll(anotherMap);
+        assertThat(hashMap.size(), is(equalTo(anotherMap.size())));
+        for (Map.Entry<Integer, String> entry : anotherMap.entrySet()) {
+            assertTrue(hashMap.containsKey(entry.getKey()));
+            assertTrue(hashMap.containsValue(entry.getValue()));
+        }
+    }
+
+
+
+    @Test
+    public void testThatValuesMethodContainsAllValuesFromMap(){
+        hashMap.put(1, "a");
+        hashMap.put(2, "b");
+        hashMap.put(3, "c");
+        hashMap.put(4, "d");
+        hashMap.put(5, "e");
+        hashMap.put(6, "f");
+        hashMap.put(7, "g");
+        hashMap.put(8, "h");
+        hashMap.put(9, "i");
+
+        Collection<String> values = hashMap.values();
+        assertThat(values.size(), is(equalTo(hashMap.size())));
+
+        for (Map.Entry<Integer, String> entry : hashMap.entrySet()) {
+            assertTrue(values.contains(entry.getValue()));
         }
     }
 }

@@ -28,7 +28,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     }
 
     public boolean isEmpty() {
-        return size() == 0;
+        return size == 0;
     }
 
     public boolean containsKey(Object key) {
@@ -165,6 +165,10 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     }
 
     public void putAll(Map<? extends K, ? extends V> m) {
+        Set<? extends Map.Entry<? extends K, ? extends V>> entries = m.entrySet();
+        for (Map.Entry<? extends K, ? extends V> entry : entries) {
+            this.put(entry.getKey(),entry.getValue());
+        }
     }
 
     public void clear() {
@@ -175,14 +179,15 @@ public class CustomHashMap<K, V> implements Map<K, V> {
     public Set<K> keySet() {
         Set<Map.Entry<K, V>> entrySet = entrySet();
         keySet = new HashSet<>();
-        for (Map.Entry<K, V> entry: entrySet ){
+        for (Map.Entry<K, V> entry : entrySet) {
             keySet.add(entry.getKey());
         }
         return keySet;
     }
 
     public Collection<V> values() {
-        return null;
+        // TODO: 30.03.2017
+      return null;
     }
 
     public Set<Map.Entry<K, V>> entrySet() {
