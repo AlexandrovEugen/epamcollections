@@ -2,7 +2,6 @@ package com.epam.java.se;
 
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.Collection;
@@ -199,7 +198,6 @@ public class CustomTreeMapTest {
     }
 
 
-    @Ignore
     @Test
     public void testThatValuesMethodContainsAllValuesFromMap() {
         treeMap.put(1, "1");

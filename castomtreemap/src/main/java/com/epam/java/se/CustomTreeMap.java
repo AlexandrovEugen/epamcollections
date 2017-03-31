@@ -9,8 +9,6 @@ public class CustomTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
 
     private int size = 0;
     private Node<K, V> root = null;
-    private Set<Map.Entry<K, V>> entrySet;
-    private Set<K> keySet;
 
     @Override
     public int size() {
@@ -211,7 +209,7 @@ public class CustomTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
 
     @Override
     public Set<K> keySet() {
-        keySet = new HashSet<>();
+        Set<K> keySet = new HashSet<>();
         for (Entry<K, V> node : getOrderedNodes()) {
             keySet.add(node.getKey());
         }
@@ -220,13 +218,27 @@ public class CustomTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
 
     @Override
     public Collection<V> values() {
-        return null;
+        return new AbstractCollection<V>() {
+            @Override
+            public Iterator<V> iterator() {
+                return new TreeIterator(root);
+            }
+
+            @Override
+            public int size() {
+                return CustomTreeMap.this.size();
+            }
+
+            public boolean contains(Object o) {
+                return CustomTreeMap.this.containsValue(o);
+            }
+
+        };
     }
 
     @Override
     public Set<Entry<K, V>> entrySet() {
-        entrySet = new HashSet<>(getOrderedNodes());
-        return entrySet;
+        return new HashSet<>(getOrderedNodes());
     }
 
     private void orderedTreeWalk(Node<K, V> node, List<Map.Entry<K, V>> list) {
@@ -276,12 +288,56 @@ public class CustomTreeMap<K extends Comparable<K>, V> implements Map<K, V> {
             return oldValue;
         }
 
-        public Color getColor() {
+        private Color getColor() {
             return color;
         }
 
-        public void setColor(Color color) {
+        private void setColor(Color color) {
             this.color = color;
+        }
+    }
+
+    private class TreeIterator implements Iterator<V> {
+
+        private Node<K, V> next;
+
+        TreeIterator(Node<K, V> node) {
+            next = node;
+            while (next.left != null) {
+                next = next.left;
+            }
+        }
+
+        @Override
+        public boolean hasNext() {
+            return next != null;
+        }
+
+        @Override
+        public V next() {
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
+            Node<K, V> r = next;
+            if (next.right != null) {
+                next = next.right;
+                while (next.left != null) {
+                    next = next.left;
+                }
+                return r.getValue();
+            } else {
+                while (true) {
+                    if (next.parent == null) {
+                        next = null;
+                        return r.getValue();
+                    }
+                    if (next.parent.left == next) {
+                        next = next.parent;
+                        return r.getValue();
+                    }
+                    next = next.parent;
+                }
+            }
         }
     }
 }
