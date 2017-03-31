@@ -1,3 +1,5 @@
-.idea/*
-*/target/*
 *.iml
+castomhashmap/src/main/resources/
+castomtreemap/src/main/resources/
+castomtreemap/target/
+/.idea/
