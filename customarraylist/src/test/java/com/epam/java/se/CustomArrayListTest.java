@@ -7,6 +7,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNull.notNullValue;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -35,5 +36,13 @@ public class CustomArrayListTest {
     public void testThatIfListEmptyThenContainsReturnFalse(){
         assertTrue(arrayList.isEmpty());
         assertFalse(arrayList.contains(1));
+    }
+
+    @Test
+    public void testThatAddMethodWorksRight(){
+        assertTrue(arrayList.isEmpty());
+        arrayList.add(2);
+        assertThat(arrayList.size(), is(equalTo(1)));
+        assertTrue(arrayList.contains(2));
     }
 }

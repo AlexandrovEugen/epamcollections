@@ -46,7 +46,7 @@ public class CustomTreeMapTest {
     @Test
     public void testThatPutMethodWorksRight() {
         treeMap.put(1, "first");
-        treeMap.containsKey(1);
+        assertTrue(treeMap.containsKey(1));
     }
 
     @Test

@@ -9,6 +9,7 @@ import java.util.ListIterator;
 public class CustomArrayList<E> implements List<E> {
 
     private int size;
+    private E[] array = (E[]) new Object[10];
 
     @Override
     public int size() {
@@ -26,8 +27,13 @@ public class CustomArrayList<E> implements List<E> {
             return false;
         }
         else {
-            return false;
+            for (int i = 0; i < size; i++) {
+                if (array[i].equals(o)){
+                    return true;
+                }
+            }
         }
+        return false;
     }
 
     @Override
@@ -47,7 +53,8 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public boolean add(E e) {
-        return false;
+        array[size++] = e;
+        return true;
     }
 
     @Override
