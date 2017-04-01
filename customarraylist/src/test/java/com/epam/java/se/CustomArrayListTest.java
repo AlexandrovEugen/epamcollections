@@ -111,7 +111,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testThatRemovedElementByIndexNonExistsInList(){
+    public void testThatRemovedElementByIndexNonExistsInList() {
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);
@@ -124,7 +124,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testThatRemovedElementByValueNonExistsInList(){
+    public void testThatRemovedElementByValueNonExistsInList() {
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);
@@ -137,7 +137,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testThatSublistWorksRight(){
+    public void testThatSublistWorksRight() {
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);
@@ -155,7 +155,7 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void testThatSetMethodWorksRight(){
+    public void testThatSetMethodWorksRight() {
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);
@@ -165,6 +165,15 @@ public class CustomArrayListTest {
         assertThat(arrayList.get(5), is(equalTo(6)));
         arrayList.set(5, 9);
         assertThat(arrayList.get(5), is(equalTo(9)));
+    }
 
+    @Test
+    public void lastIndexOfTest(){
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        arrayList.add(4);
+        assertThat(arrayList.lastIndexOf(4), is(equalTo(4)));
     }
 }

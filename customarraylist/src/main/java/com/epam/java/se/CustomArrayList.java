@@ -141,6 +141,12 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public void add(int index, E element) {
+        if (index < 0 || index >= size){
+            throw new IllegalArgumentException();
+        }
+        else {
+            array[index] = element;
+        }
     }
 
     @Override
@@ -170,7 +176,12 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public int lastIndexOf(Object o) {
-        return 0;
+        for (int i = size -1; i >= 0 ; i--) {
+            if (array[i].equals(o)){
+                return i;
+            }
+        }
+        throw new NoSuchElementException();
     }
 
     @Override

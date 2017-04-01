@@ -31,8 +31,8 @@
       <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="563" column="6" lean-forward="false" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
+            <state relative-caret-position="188">
+              <caret line="640" column="8" lean-forward="false" selection-start-line="640" selection-start-column="8" selection-end-line="640" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -41,18 +41,18 @@
       <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="1247" column="70" lean-forward="true" selection-start-line="1247" selection-start-column="70" selection-end-line="1247" selection-end-column="70" />
+            <state relative-caret-position="34">
+              <caret line="1249" column="9" lean-forward="true" selection-start-line="1249" selection-start-column="9" selection-end-line="1249" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomArrayListTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomArrayListTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="161" column="25" lean-forward="true" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+            <state relative-caret-position="446">
+              <caret line="177" column="5" lean-forward="true" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#533#534#0" expanded="true" />
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomArrayList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomArrayList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="137" column="23" lean-forward="false" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+            <state relative-caret-position="1483">
+              <caret line="178" column="29" lean-forward="false" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
               <folding>
                 <element signature="method#contains#0;class#CustomArrayList#0" expanded="false" />
                 <element signature="method#iterator#0;class#CustomArrayList#0" expanded="false" />
@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/castomtreemap/src/main/java/com/epam/java/se/CustomTreeMap.java" />
         <option value="$PROJECT_DIR$/castomtreemap/src/test/java/com/epam/java/se/CustomTreeMapTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java" />
         <option value="$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java" />
+        <option value="$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java" />
       </list>
     </option>
   </component>
@@ -913,7 +913,7 @@
       <workItem from="1490707716606" duration="38866000" />
       <workItem from="1490915949595" duration="25905000" />
       <workItem from="1491047309160" duration="835000" />
-      <workItem from="1491048615742" duration="18737000" />
+      <workItem from="1491048615742" duration="20889000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1490916153065</created>
@@ -978,25 +978,17 @@
       <option name="project" value="LOCAL" />
       <updated>1491062465026</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="+set">
+      <created>1491077279586</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491077279586</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 33m 43s.xml">
-      <configuration name="CustomArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 35m 47s.xml">
-      <configuration name="CustomArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 36m 33s.xml">
-      <configuration name="CustomArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 37m 39s.xml">
-      <configuration name="CustomArrayListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 58m 39s.xml">
-      <configuration name="CustomArrayListTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomArrayListTest - 2017.04.01 at 22h 01m 37s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
@@ -1012,9 +1004,24 @@
     <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 07m 44s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 27m 27s.xml">
+      <configuration name="CustomArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 31m 25s.xml">
+      <configuration name="CustomArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 42m 48s.xml">
+      <configuration name="CustomArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 43m 07s.xml">
+      <configuration name="CustomArrayListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 43m 16s.xml">
+      <configuration name="CustomArrayListTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141967000" />
+    <option name="totallyTimeSpent" value="144119000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1094,7 +1101,8 @@
     <MESSAGE value="+contains" />
     <MESSAGE value="*contains, +add" />
     <MESSAGE value="*contains" />
-    <option name="LAST_COMMIT_MESSAGE" value="*contains" />
+    <MESSAGE value="+set" />
+    <option name="LAST_COMMIT_MESSAGE" value="+set" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1389,41 +1397,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="563" column="6" lean-forward="false" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="1247" column="70" lean-forward="true" selection-start-line="1247" selection-start-column="70" selection-end-line="1247" selection-end-column="70" />
+        <state relative-caret-position="34">
+          <caret line="1249" column="9" lean-forward="true" selection-start-line="1249" selection-start-column="9" selection-end-line="1249" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="137" column="23" lean-forward="false" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
-          <folding>
-            <element signature="method#contains#0;class#CustomArrayList#0" expanded="false" />
-            <element signature="method#iterator#0;class#CustomArrayList#0" expanded="false" />
-            <element signature="class#827:1098" expanded="false" />
-            <element signature="method#add#0;class#CustomArrayList#0" expanded="false" />
-            <element signature="method#ensureCapacity#0;class#CustomArrayList#0" expanded="false" />
-            <element signature="method#remove#0;class#CustomArrayList#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="188">
+          <caret line="640" column="8" lean-forward="false" selection-start-line="640" selection-start-column="8" selection-end-line="640" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="161" column="25" lean-forward="true" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+        <state relative-caret-position="446">
+          <caret line="177" column="5" lean-forward="true" selection-start-line="177" selection-start-column="5" selection-end-line="177" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#533#534#0" expanded="true" />
@@ -1434,6 +1427,21 @@
             <element signature="e#820#821#0" expanded="true" />
             <element signature="e#2604#2605#0" expanded="true" />
             <element signature="e#2640#2641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1483">
+          <caret line="178" column="29" lean-forward="false" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+          <folding>
+            <element signature="method#contains#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="method#iterator#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="class#827:1098" expanded="false" />
+            <element signature="method#add#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="method#ensureCapacity#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#CustomArrayList#0" expanded="false" />
           </folding>
         </state>
       </provider>
