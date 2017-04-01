@@ -22,7 +22,12 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public boolean contains(Object o) {
-        return false;
+        if (isEmpty()){
+            return false;
+        }
+        else {
+            return false;
+        }
     }
 
     @Override

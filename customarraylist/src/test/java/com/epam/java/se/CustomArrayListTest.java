@@ -8,6 +8,7 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.notNullValue;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class CustomArrayListTest {
@@ -30,5 +31,9 @@ public class CustomArrayListTest {
         assertTrue(arrayList.isEmpty());
     }
 
-
+    @Test
+    public void testThatIfListEmptyThenContainsReturnFalse(){
+        assertTrue(arrayList.isEmpty());
+        assertFalse(arrayList.contains(1));
+    }
 }
