@@ -26,11 +26,14 @@ public class CustomArrayList<E> implements List<E> {
         if (isEmpty()){
             return false;
         }
-        else {
-            for (int i = 0; i < size; i++) {
-                if (array[i].equals(o)){
+        for (int i = 0; i < size; i++) {
+            if (array[i] == null){
+                if (o == null){
                     return true;
                 }
+            }
+            else if(array[i].equals(o)){
+                return true;
             }
         }
         return false;
@@ -94,7 +97,10 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public E get(int index) {
-        return null;
+        if (size <= index){
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        return array[index];
     }
 
     @Override

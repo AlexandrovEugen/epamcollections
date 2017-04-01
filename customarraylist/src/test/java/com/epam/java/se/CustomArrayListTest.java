@@ -18,31 +18,55 @@ public class CustomArrayListTest {
     private List<Integer> arrayList;
 
     @Before
-    public void init(){
+    public void init() {
         arrayList = new CustomArrayList<>();
     }
 
     @Test
-    public void testThatWeCanInitializeObject(){
+    public void testThatWeCanInitializeObject() {
         assertThat(arrayList, is(notNullValue()));
     }
 
     @Test
-    public void testThatIfListHasJustInitializedIsEmpty(){
+    public void testThatIfListHasJustInitializedIsEmpty() {
         assertTrue(arrayList.isEmpty());
     }
 
     @Test
-    public void testThatIfListEmptyThenContainsReturnFalse(){
+    public void testThatIfListEmptyThenContainsReturnFalse() {
         assertTrue(arrayList.isEmpty());
         assertFalse(arrayList.contains(1));
     }
 
     @Test
-    public void testThatAddMethodWorksRight(){
+    public void testThatAddMethodWorksRight() {
         assertTrue(arrayList.isEmpty());
         arrayList.add(2);
         assertThat(arrayList.size(), is(equalTo(1)));
         assertTrue(arrayList.contains(2));
+    }
+
+    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    public void testThatMethodGetThrowsExceptionFromOutOfBounds() {
+        assertTrue(arrayList.isEmpty());
+        arrayList.add(2);
+        assertThat(arrayList.size(), is(equalTo(1)));
+        arrayList.get(1);
+    }
+
+    @Test
+    public void testThatGetElementByIndexWorksRight() {
+        arrayList.add(2);
+        assertThat(arrayList.get(0), is(equalTo(2)));
+    }
+
+    @Test
+    public void testThatListPermitStoringNullValue(){
+        arrayList.add(10);
+        arrayList.add(11);
+        arrayList.add(null);
+        arrayList.add(13);
+        assertThat(arrayList.size(), is(equalTo(4)));
+        assertTrue(arrayList.contains(null));
     }
 }
