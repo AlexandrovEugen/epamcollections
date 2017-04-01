@@ -1,15 +1,13 @@
 package com.epam.java.se;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 
 
 public class CustomArrayList<E> implements List<E> {
 
+    private int capacity = 10;
     private int size;
-    private E[] array = (E[]) new Object[10];
+    private E[] array = (E[]) new Object[capacity];
 
     @Override
     public int size() {
@@ -23,16 +21,15 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public boolean contains(Object o) {
-        if (isEmpty()){
+        if (isEmpty()) {
             return false;
         }
         for (int i = 0; i < size; i++) {
-            if (array[i] == null){
-                if (o == null){
+            if (array[i] == null) {
+                if (o == null) {
                     return true;
                 }
-            }
-            else if(array[i].equals(o)){
+            } else if (array[i].equals(o)) {
                 return true;
             }
         }
@@ -41,7 +38,19 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public Iterator<E> iterator() {
-        return null;
+        return new Iterator<E>() {
+            int index = 0;
+
+            @Override
+            public boolean hasNext() {
+                return index < size;
+            }
+
+            @Override
+            public E next() {
+                return array[index++];
+            }
+        };
     }
 
     @Override
@@ -56,13 +65,27 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public boolean add(E e) {
+        if (size + 1 == array.length) {
+            ensureCapacity();
+        }
         array[size++] = e;
         return true;
     }
 
+    private void ensureCapacity() {
+        int newLength = (array.length * 3) / 2 + 1;
+        array = Arrays.copyOf(array, newLength);
+    }
+
     @Override
     public boolean remove(Object o) {
-        return false;
+        try {
+            remove(indexOf(o));
+        }
+        catch (NoSuchElementException e){
+            return false;
+        }
+        return true;
     }
 
     @Override
@@ -92,12 +115,13 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public void clear() {
-
+        array = (E[]) new Object[10];
+        size = 0;
     }
 
     @Override
     public E get(int index) {
-        if (size <= index){
+        if (size <= index || size < 0) {
             throw new ArrayIndexOutOfBoundsException();
         }
         return array[index];
@@ -105,22 +129,43 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public E set(int index, E element) {
-        return null;
+        if (index < 0 || index >= size){
+            throw new IllegalArgumentException();
+        }
+        else {
+            E oldValue = array[index];
+            array[index] = element;
+            return oldValue;
+        }
     }
 
     @Override
     public void add(int index, E element) {
-
     }
 
     @Override
     public E remove(int index) {
-        return null;
+        int length = array.length - index;
+        E value = array[index];
+        System.arraycopy(array, index + 1, array, index, length-1);
+        size--;
+        return value;
     }
 
     @Override
     public int indexOf(Object o) {
-        return 0;
+        for (int i = 0; i < size; i++) {
+            if (array[i] == null) {
+                if (o == null) {
+                    return i;
+                }
+            } else {
+                if (array[i].equals(o)) {
+                    return i;
+                }
+            }
+        }
+        throw new NoSuchElementException();
     }
 
     @Override
@@ -140,6 +185,14 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
-        return null;
+        List<E> sublist = new CustomArrayList<>();
+        if (fromIndex < 0 || fromIndex >= size){
+            throw  new IllegalArgumentException();
+        }
+        if (toIndex < 0 || toIndex >= size){
+            throw new IllegalArgumentException();
+        }
+        sublist.addAll(Arrays.asList(array).subList(fromIndex, toIndex + 1));
+        return sublist;
     }
 }

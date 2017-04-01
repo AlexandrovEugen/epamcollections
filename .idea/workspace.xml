@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2df8fa6-93b3-4457-95cb-854a7aa8e5c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java" afterPath="$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java" afterPath="$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java" />
@@ -29,66 +28,58 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomArrayList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java">
+      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/List.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="545">
+              <caret line="563" column="6" lean-forward="false" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="1247" column="70" lean-forward="true" selection-start-line="1247" selection-start-column="70" selection-end-line="1247" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomArrayListTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="161" column="25" lean-forward="true" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
-                <element signature="e#1206#1207#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1299#1300#0" expanded="true" />
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
-                <element signature="e#1425#1426#0" expanded="true" />
-                <element signature="e#1506#1507#0" expanded="true" />
-                <element signature="e#1534#1535#0" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
-                <element signature="e#1625#1626#0" expanded="true" />
-                <element signature="e#1688#1689#0" expanded="true" />
-                <element signature="e#1716#1717#0" expanded="true" />
-                <element signature="e#1994#1995#0" expanded="true" />
-                <element signature="e#2021#2022#0" expanded="true" />
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2162#2163#0" expanded="true" />
-                <element signature="e#2212#2213#0" expanded="true" />
-                <element signature="e#2236#2237#0" expanded="true" />
-                <element signature="e#2290#2291#0" expanded="true" />
-                <element signature="e#2314#2315#0" expanded="true" />
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2400#2401#0" expanded="true" />
-                <element signature="e#2468#2469#0" expanded="true" />
-                <element signature="e#2495#2496#0" expanded="true" />
-                <element signature="e#2567#2568#0" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#645#646#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+                <element signature="e#2604#2605#0" expanded="true" />
+                <element signature="e#2640#2641#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomArrayListTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java">
+      <file leaf-file-name="CustomArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="137" column="23" lean-forward="false" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#661#662#0" expanded="true" />
-                <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
+                <element signature="method#contains#0;class#CustomArrayList#0" expanded="false" />
+                <element signature="method#iterator#0;class#CustomArrayList#0" expanded="false" />
+                <element signature="class#827:1098" expanded="false" />
+                <element signature="method#add#0;class#CustomArrayList#0" expanded="false" />
+                <element signature="method#ensureCapacity#0;class#CustomArrayList#0" expanded="false" />
+                <element signature="method#remove#0;class#CustomArrayList#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,8 +117,8 @@
         <option value="$PROJECT_DIR$/castomtreemap/src/main/java/com/epam/java/se/CustomTreeMap.java" />
         <option value="$PROJECT_DIR$/castomtreemap/src/test/java/com/epam/java/se/CustomTreeMapTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java" />
         <option value="$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java" />
+        <option value="$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java" />
       </list>
     </option>
   </component>
@@ -922,7 +913,7 @@
       <workItem from="1490707716606" duration="38866000" />
       <workItem from="1490915949595" duration="25905000" />
       <workItem from="1491047309160" duration="835000" />
-      <workItem from="1491048615742" duration="6730000" />
+      <workItem from="1491048615742" duration="18737000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1490916153065</created>
@@ -980,43 +971,50 @@
       <option name="project" value="LOCAL" />
       <updated>1491052253901</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="*contains">
+      <created>1491062465026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1491062465026</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 16h 08m 20s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 33m 43s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 16h 10m 32s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 35m 47s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 16h 22m 53s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 36m 33s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 16h 24m 09s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 37m 39s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 16h 24m 15s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 21h 58m 39s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 16h 25m 01s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 22h 01m 37s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 18h 33m 18s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 22h 41m 27s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 18h 53m 35s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 22h 49m 16s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 18h 54m 01s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 03m 02s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomArrayListTest - 2017.04.01 at 19h 00m 39s.xml">
+    <history-entry file="CustomArrayListTest - 2017.04.01 at 23h 07m 44s.xml">
       <configuration name="CustomArrayListTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129960000" />
+    <option name="totallyTimeSpent" value="141967000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1046,10 +1044,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26279318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26279318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1095,7 +1093,8 @@
     <MESSAGE value="+isEmpty, size." />
     <MESSAGE value="+contains" />
     <MESSAGE value="*contains, +add" />
-    <option name="LAST_COMMIT_MESSAGE" value="*contains, +add" />
+    <MESSAGE value="*contains" />
+    <option name="LAST_COMMIT_MESSAGE" value="*contains" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1200,13 +1199,6 @@
         <state relative-caret-position="221">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="492" column="47" lean-forward="true" selection-start-line="492" selection-start-column="47" selection-end-line="492" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1389,63 +1381,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="470" column="40" lean-forward="true" selection-start-line="470" selection-start-column="40" selection-end-line="470" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="563" column="6" lean-forward="false" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="1247" column="70" lean-forward="true" selection-start-line="1247" selection-start-column="70" selection-end-line="1247" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/customarraylist/src/main/java/com/epam/java/se/CustomArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="137" column="23" lean-forward="false" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+          <folding>
+            <element signature="method#contains#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="method#iterator#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="class#827:1098" expanded="false" />
+            <element signature="method#add#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="method#ensureCapacity#0;class#CustomArrayList#0" expanded="false" />
+            <element signature="method#remove#0;class#CustomArrayList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customarraylist/src/test/java/com/epam/java/se/CustomArrayListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="161" column="25" lean-forward="true" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
-            <element signature="e#1625#1626#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-            <element signature="e#2021#2022#0" expanded="true" />
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2212#2213#0" expanded="true" />
-            <element signature="e#2236#2237#0" expanded="true" />
-            <element signature="e#2290#2291#0" expanded="true" />
-            <element signature="e#2314#2315#0" expanded="true" />
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2400#2401#0" expanded="true" />
-            <element signature="e#2468#2469#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-            <element signature="e#2567#2568#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#2604#2605#0" expanded="true" />
+            <element signature="e#2640#2641#0" expanded="true" />
           </folding>
         </state>
       </provider>
