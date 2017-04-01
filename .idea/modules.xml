@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/castomhashmap/castomhashmap.iml" filepath="$PROJECT_DIR$/castomhashmap/castomhashmap.iml" />
       <module fileurl="file://$PROJECT_DIR$/castomtreemap/castomtreemap.iml" filepath="$PROJECT_DIR$/castomtreemap/castomtreemap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customarraylist/customarraylist.iml" filepath="$PROJECT_DIR$/customarraylist/customarraylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/epamcollections.iml" filepath="$PROJECT_DIR$/epamcollections.iml" />
     </modules>
   </component>

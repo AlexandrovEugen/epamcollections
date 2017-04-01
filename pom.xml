@@ -11,6 +11,7 @@
     <modules>
         <module>castomhashmap</module>
         <module>castomtreemap</module>
+        <module>customarraylist</module>
     </modules>
 
     <build>
