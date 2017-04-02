@@ -3,6 +3,7 @@ package com.epam.java.se;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -10,8 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNull.notNullValue;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class CustomArrayListTest {
 
@@ -168,12 +168,81 @@ public class CustomArrayListTest {
     }
 
     @Test
-    public void lastIndexOfTest(){
+    public void lastIndexOfTest() {
         arrayList.add(1);
         arrayList.add(2);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(4);
         assertThat(arrayList.lastIndexOf(4), is(equalTo(4)));
+    }
+
+    @Test
+    public void toArrayTest() {
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        arrayList.add(5);
+        arrayList.add(6);
+        Object[] objects = arrayList.toArray();
+        assertThat(objects.length, is(equalTo(arrayList.size())));
+        for (int i = 0; i < objects.length; i++) {
+            assertEquals(arrayList.get(i), objects[i]);
+        }
+    }
+
+    @Test
+    public void addAllTest() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        arrayList.addAll(list);
+        assertThat(list.size(), is(equalTo(arrayList.size())));
+        for (Integer e : list) {
+            assertTrue(arrayList.contains(e));
+        }
+    }
+
+    @Test
+    public void deleteAll() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        arrayList.add(5);
+        arrayList.add(6);
+        arrayList.add(7);
+        assertThat(arrayList.size(), is(equalTo(7)));
+        arrayList.removeAll(list);
+        assertThat(arrayList.size(), is(equalTo(1)));
+        for (Integer e : list) {
+            assertFalse(arrayList.contains(e));
+        }
+        assertTrue(arrayList.contains(7));
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void addAllWithIndexThrowsExceptionIfIndexIsOutOfSize(){
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        arrayList.addAll(2, list);
     }
 }
