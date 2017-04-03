@@ -220,12 +220,109 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public ListIterator<E> listIterator() {
-        return null;
+        return new ListIterator<E>() {
+            int iterator = 0;
+            @Override
+            public boolean hasNext() {
+                return iterator != size;
+            }
+
+            @Override
+            public E next() {
+                return array[++iterator];
+            }
+
+            @Override
+            public boolean hasPrevious() {
+                return iterator > 0;
+            }
+
+            @Override
+            public E previous() {
+                return array[--iterator];
+            }
+
+            @Override
+            public int nextIndex() {
+                return iterator + 1;
+            }
+
+            @Override
+            public int previousIndex() {
+                return iterator - 1;
+            }
+
+            @Override
+            public void remove() {
+                CustomArrayList.this.remove(iterator);
+            }
+
+            @Override
+            public void set(E e) {
+                CustomArrayList.this.remove(e);
+            }
+
+            @Override
+            public void add(E e) {
+                CustomArrayList.this.add(e);
+            }
+        };
     }
 
     @Override
     public ListIterator<E> listIterator(int index) {
-        return null;
+        if (index < 0 || index >= size){
+            throw new IllegalArgumentException();
+        }
+        return new ListIterator<E>() {
+
+            int iterator = index;
+
+            @Override
+            public boolean hasNext() {
+                return iterator <= size;
+            }
+
+            @Override
+            public E next() {
+                return array[++size];
+            }
+
+            @Override
+            public boolean hasPrevious() {
+                return iterator > 0;
+            }
+
+            @Override
+            public E previous() {
+                return array[-size];
+            }
+
+            @Override
+            public int nextIndex() {
+                return ++iterator;
+            }
+
+            @Override
+            public int previousIndex() {
+                return --iterator;
+            }
+
+            @Override
+            public void remove() {
+                CustomArrayList.this.remove(iterator);
+            }
+
+            @Override
+            public void set(E e) {
+                CustomArrayList.this.set(iterator, e);
+            }
+
+            @Override
+            public void add(E e) {
+                CustomArrayList.this.add(e);
+            }
+        };
     }
 
     @Override
