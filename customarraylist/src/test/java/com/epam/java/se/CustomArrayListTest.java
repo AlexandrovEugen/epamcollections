@@ -235,7 +235,7 @@ public class CustomArrayListTest {
     }
 
     @Test(expected = IndexOutOfBoundsException.class)
-    public void addAllWithIndexThrowsExceptionIfIndexIsOutOfSize(){
+    public void addAllWithIndexThrowsExceptionIfIndexIsOutOfSize() {
         List<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
@@ -244,5 +244,70 @@ public class CustomArrayListTest {
         list.add(5);
         list.add(6);
         arrayList.addAll(2, list);
+    }
+
+    @Test
+    public void addAllByIndexTest() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.add(8);
+        list.add(9);
+        list.add(10);
+        list.add(11);
+
+        assertTrue(arrayList.isEmpty());
+        arrayList.add(8);
+        arrayList.add(9);
+        arrayList.addAll(0, list);
+        assertThat(arrayList.size(), is(equalTo(13)));
+    }
+
+    @Test
+    public void testThatRetainsMethodWorksRight() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+
+
+        arrayList.add(1);
+        arrayList.add(10);
+        arrayList.add(8);
+        arrayList.add(7);
+        arrayList.add(6);
+        arrayList.add(9);
+        arrayList.retainAll(list);
+        assertTrue(arrayList.contains(1));
+        assertTrue(arrayList.contains(6));
+        assertFalse(arrayList.contains(10));
+    }
+
+    @Test
+    public void testIfAllElementsFromOtherListAraContainsInThisArrayMethodContainsReturnTrue(){
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
+
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        arrayList.add(5);
+        arrayList.add(6);
+        arrayList.add(7);
+        assertTrue(arrayList.containsAll(list));
     }
 }

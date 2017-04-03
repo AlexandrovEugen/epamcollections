@@ -87,29 +87,52 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return false;
+        for (Object e: c) {
+            if (!contains(e)){
+                return false;
+            }
+        }
+        return true;
     }
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        for (Object e : c.toArray()) {
-            add((E) e);
+        if (this.isEmpty()) {
+            array = Arrays.copyOf((E[]) c.toArray(), c.size());
+            size = c.size();
+        }
+        else {
+            for (Object e : c.toArray()) {
+                add((E) e);
+            }
         }
         return false;
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        if (index < 0 || index >= size){
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
-        return false;
+        Object[] a = c.toArray();
+        int numNew = a.length;
+        if (array.length < numNew){
+            ensureCapacity();
+        }
+        int numMoved = size - index;
+        if (numMoved > 0)
+            System.arraycopy(array, index, array, index + numNew,
+                    numMoved);
+
+        System.arraycopy(a, 0, array, index, numNew);
+        size += numNew;
+        return numNew != 0;
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        for (Object e: c.toArray()) {
-            if (contains(e)){
+        for (Object e : c.toArray()) {
+            if (contains(e)) {
                 remove(e);
             }
         }
@@ -118,6 +141,11 @@ public class CustomArrayList<E> implements List<E> {
 
     @Override
     public boolean retainAll(Collection<?> c) {
+        for (int i = 0; i < size; i++) {
+            if (!c.contains(array[i])){
+                remove(i);
+            }
+        }
         return false;
     }
 
