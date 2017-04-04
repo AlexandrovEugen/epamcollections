@@ -9,12 +9,14 @@
         <module name="castomhashmap" />
         <module name="castomtreemap" />
         <module name="customarraylist" />
+        <module name="customlinkedlist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="castomhashmap" target="1.8" />
       <module name="castomtreemap" target="1.8" />
       <module name="customarraylist" target="1.8" />
+      <module name="customlinkedlist" target="1.8" />
       <module name="epamcollections" target="1.8" />
     </bytecodeTargetLevel>
   </component>

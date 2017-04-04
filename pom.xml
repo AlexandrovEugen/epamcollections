@@ -12,6 +12,7 @@
         <module>castomhashmap</module>
         <module>castomtreemap</module>
         <module>customarraylist</module>
+        <module>customlinkedlist</module>
     </modules>
 
     <build>
