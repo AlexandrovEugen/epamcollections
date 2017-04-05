@@ -35,8 +35,21 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public Iterator<E> iterator() {
-        /// TODO: 05.04.2017
-        return null;
+
+        return new Iterator<E>() {
+            private Node<E> iterator = head;
+
+            @Override
+            public boolean hasNext() {
+                return iterator.hasNext();
+            }
+
+            @Override
+            public E next() {
+                iterator = iterator.next;
+                return iterator.getElem();
+            }
+        };
     }
 
     @Override
@@ -52,32 +65,42 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public <T> T[] toArray(T[] a) {
-        return null;
+        if (a.length < size) {
+            throw new IllegalArgumentException();
+        } else {
+            Node<E> iterator = head.next;
+            for (int i = 0; i < size; i++) {
+                a[i] = (T) iterator.getElem();
+                iterator = iterator.next;
+            }
+        }
+        return a;
     }
 
     @Override
-    public boolean add(E t) {
+    public boolean add(E e) {
         Node<E> iterator = head;
         while (iterator.hasNext()) {
             iterator = iterator.next;
         }
-        iterator.next = new Node<>(t);
+        iterator.next = new Node<>(e);
+        iterator.next.prev = iterator;
         size++;
-        return false;
+        return iterator.hasNext();
     }
 
     @Override
     public boolean remove(Object o) {
-        Node<E> current = head.next;
+        Node<E> current = head;
         Node<E> prev = head;
-        while (current != null) {
+        while (current.hasNext()) {
+            current = current.next;
             if (o.equals(current.getElem())) {
                 prev.next = current.next;
                 size--;
                 return true;
             }
             prev = current;
-            current = current.next;
         }
         return false;
     }
@@ -94,34 +117,71 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
+        if (c.isEmpty()) {
+            return false;
+        }
         for (Object e : c) {
             add((E) e);
         }
-        return false;
+        return true;
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        if (index < 0 || index >= size) {
+        Objects.requireNonNull(c);
+        if (index < 0 || index > size) {
             throw new IndexOutOfBoundsException();
         }
-        return false;
+        if (c.isEmpty()) {
+            return false;
+        }
+        if (isEmpty()) {
+            addAll(c);
+        }
+        Node<E> iterator = getNodeByIndex(index);
+        for (Object e : c) {
+            if (iterator != null) {
+                iterator.setElem((E) e);
+                iterator = iterator.next;
+            } else {
+                iterator = new Node<>((E) e);
+                iterator = iterator.next;
+                size++;
+            }
+        }
+        return true;
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
+        Objects.requireNonNull(c);
+        if (c.isEmpty()) {
+            return false;
+        }
         for (Object e : c) {
             if (contains(e)) {
                 remove(e);
             }
         }
-        return false;
+        return true;
     }
 
     @Override
     public boolean retainAll(Collection<?> c) {
-        /// TODO: 05.04.2017
-        return true;
+        if (isEmpty()) {
+            return false;
+        }
+        List<E> toRemove = new CustomLinkedList<>();
+        for (Object e : c) {
+            if (contains(e)) {
+                toRemove.add((E) e);
+            }
+        }
+        clear();
+        for (E e: toRemove){
+            add(e);
+        }
+        return toRemove.isEmpty();
     }
 
     @Override
@@ -132,7 +192,10 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public E get(int index) {
-        if (index < 0 || index >= size) {
+        if (isEmpty()) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
+        if (index < 0 || index > size) {
             throw new ArrayIndexOutOfBoundsException();
         }
         return getNodeByIndex(index).getElem();
@@ -184,9 +247,11 @@ public class CustomLinkedList<E> implements List<E> {
     }
 
     private Node<E> getNodeByIndex(int index) {
-
+        if (isEmpty()) {
+            throw new ArrayIndexOutOfBoundsException();
+        }
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException();
+            throw new ArrayIndexOutOfBoundsException();
         }
 
         Node<E> current = head.next;
@@ -224,7 +289,7 @@ public class CustomLinkedList<E> implements List<E> {
                 iterator = iterator.next;
             }
         }
-        if (index == -1){
+        if (index == -1) {
             throw new NoSuchElementException();
         }
         return index;
@@ -237,15 +302,74 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public ListIterator<E> listIterator(int index) {
-        return null;
+        if (isEmpty()) {
+            throw new IllegalArgumentException();
+        }
+        if (index < 0 || index > size) {
+            throw new IllegalArgumentException();
+        }
+        return new ListIterator<E>() {
+            private Node<E> iterator = getNodeByIndex(index);
+            private Node<E> prev = iterator.prev;
+            private int i = index;
+
+
+            @Override
+            public boolean hasNext() {
+                return iterator.hasNext();
+            }
+
+            @Override
+            public E next() {
+                return iterator.next.getElem();
+            }
+
+            @Override
+            public boolean hasPrevious() {
+                return prev.hasPrevious();
+            }
+
+            @Override
+            public E previous() {
+                return prev.getElem();
+            }
+
+            @Override
+            public int nextIndex() {
+                return i + 1;
+            }
+
+            @Override
+            public int previousIndex() {
+                return i - 1;
+            }
+
+            @Override
+            public void remove() {
+                CustomLinkedList.this.remove(iterator.elem);
+            }
+
+            @Override
+            public void set(E e) {
+                CustomLinkedList.this.set(i, iterator.elem);
+            }
+
+            @Override
+            public void add(E e) {
+                CustomLinkedList.this.add(e);
+            }
+        };
     }
 
     @Override
     public List<E> subList(int fromIndex, int toIndex) {
         List<E> list = new CustomLinkedList<>();
-        if (fromIndex < 0 || fromIndex <= size) {
+        if (isEmpty()) {
             throw new IllegalArgumentException();
-        } else if (toIndex < 0 || toIndex <= size) {
+        }
+        if (fromIndex < 0 || fromIndex > size) {
+            throw new IllegalArgumentException();
+        } else if (toIndex < 0 || toIndex > size) {
             throw new IllegalArgumentException();
         } else {
             int index = 0;
@@ -282,16 +406,12 @@ public class CustomLinkedList<E> implements List<E> {
             this.elem = elem;
         }
 
-        private boolean hasNext() {
+        public boolean hasNext() {
             return next != null;
         }
 
-        public Node<E> next() {
-            return next;
-        }
-
-        public Node<E> prev() {
-            return prev;
+        public boolean hasPrevious() {
+            return prev != null;
         }
     }
 }

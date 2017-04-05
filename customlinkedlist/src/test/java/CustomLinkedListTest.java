@@ -10,9 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.hamcrest.core.IsNull.notNullValue;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 
 @FixMethodOrder
@@ -255,9 +253,9 @@ public class CustomLinkedListTest {
         list.add(2);
         list.add(3);
         list.add(4);
-        list.add(5);
         list.add(6);
         list.add(7);
+        list.add(5);
         list.add(8);
         list.add(9);
         list.add(10);
@@ -266,9 +264,10 @@ public class CustomLinkedListTest {
         assertTrue(linkedList.isEmpty());
         linkedList.add(8);
         linkedList.add(9);
-        linkedList.addAll(0, list);
-        assertThat(linkedList.size(), is(equalTo(13)));
+        linkedList.addAll(1, list);
+        assertThat(linkedList.size(), is(equalTo(12)));
     }
+
 
     @Test
     public void testThatRetainsMethodWorksRight() {

@@ -63,34 +63,14 @@ public class CustomArrayListTest {
 
     @Test
     public void testThatListPermitStoringNullValue() {
-        arrayList.add(10);
         arrayList.add(11);
+        arrayList.add(10);
         arrayList.add(null);
         arrayList.add(13);
         assertThat(arrayList.size(), is(equalTo(4)));
         assertTrue(arrayList.contains(null));
     }
 
-    @Test
-    public void testThatCapacityGoOutOfDefaultCapacity() {
-        arrayList.add(1);
-        arrayList.add(2);
-        arrayList.add(3);
-        arrayList.add(4);
-        arrayList.add(5);
-        arrayList.add(6);
-        arrayList.add(7);
-        arrayList.add(8);
-        arrayList.add(9);
-        arrayList.add(10);
-        arrayList.add(11);
-        arrayList.add(12);
-        arrayList.add(13);
-        arrayList.add(14);
-        arrayList.add(15);
-        arrayList.add(16);
-        assertThat(arrayList.size(), is(equalTo(16)));
-    }
 
     @Test(expected = NoSuchElementException.class)
     public void testThatIndexOfThrowsExceptionIfElementIsntInIt() {
@@ -99,8 +79,8 @@ public class CustomArrayListTest {
 
     @Test
     public void testThatIndexOfReturnsCorrectIndexForValue() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(5);
@@ -112,8 +92,8 @@ public class CustomArrayListTest {
 
     @Test
     public void testThatRemovedElementByIndexNonExistsInList() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(5);
@@ -125,8 +105,8 @@ public class CustomArrayListTest {
 
     @Test
     public void testThatRemovedElementByValueNonExistsInList() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(5);
@@ -138,8 +118,8 @@ public class CustomArrayListTest {
 
     @Test
     public void testThatSublistWorksRight() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(5);
@@ -156,8 +136,8 @@ public class CustomArrayListTest {
 
     @Test
     public void testThatSetMethodWorksRight() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(5);
@@ -169,8 +149,8 @@ public class CustomArrayListTest {
 
     @Test
     public void lastIndexOfTest() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(4);
@@ -179,8 +159,8 @@ public class CustomArrayListTest {
 
     @Test
     public void toArrayTest() {
-        arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(1);
         arrayList.add(3);
         arrayList.add(4);
         arrayList.add(5);
@@ -196,8 +176,8 @@ public class CustomArrayListTest {
     public void addAllTest() {
         List<Integer> list = new ArrayList<>();
         list.add(1);
-        list.add(2);
         list.add(3);
+        list.add(2);
         list.add(4);
         list.add(5);
         list.add(6);
@@ -211,8 +191,8 @@ public class CustomArrayListTest {
     @Test
     public void deleteAll() {
         List<Integer> list = new ArrayList<>();
-        list.add(1);
         list.add(2);
+        list.add(1);
         list.add(3);
         list.add(4);
         list.add(5);
@@ -237,8 +217,8 @@ public class CustomArrayListTest {
     @Test(expected = IndexOutOfBoundsException.class)
     public void addAllWithIndexThrowsExceptionIfIndexIsOutOfSize() {
         List<Integer> list = new ArrayList<>();
-        list.add(1);
         list.add(2);
+        list.add(1);
         list.add(3);
         list.add(4);
         list.add(5);
@@ -271,8 +251,8 @@ public class CustomArrayListTest {
     @Test
     public void testThatRetainsMethodWorksRight() {
         List<Integer> list = new ArrayList<>();
-        list.add(1);
         list.add(2);
+        list.add(1);
         list.add(3);
         list.add(4);
         list.add(5);
@@ -294,8 +274,8 @@ public class CustomArrayListTest {
     @Test
     public void testIfAllElementsFromOtherListAraContainsInThisArrayMethodContainsReturnTrue(){
         List<Integer> list = new ArrayList<>();
-        list.add(1);
         list.add(2);
+        list.add(1);
         list.add(3);
         list.add(4);
         list.add(5);
