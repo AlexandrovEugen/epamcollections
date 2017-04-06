@@ -259,7 +259,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         }
     }
 
-    class Values extends AbstractCollection<V>{
+    class Values extends AbstractCollection<V> {
 
         @Override
         public Iterator<V> iterator() {
@@ -272,23 +272,24 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         }
 
         @Override
-        public void clear(){
+        public void clear() {
             CustomHashMap.this.clear();
         }
 
         @Override
-        public boolean contains(Object o){
+        public boolean contains(Object o) {
             return CustomHashMap.this.containsValue(o);
         }
     }
 
 
-    class ValueIterator extends HashIterator implements Iterator<V>{
+    class ValueIterator extends HashIterator implements Iterator<V> {
         @Override
         public V next() {
-            return  nextEntry().getValue();
+            return nextEntry().getValue();
         }
     }
+
     abstract class HashIterator {
         Entry<K, V> next;
 
@@ -309,6 +310,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
         public boolean hasNext() {
             return next != null;
         }
+
         Entry<K, V> nextEntry() {
             Entry<K, V>[] aBucket = buckets;
             Entry<K, V> e = next;
@@ -318,7 +320,7 @@ public class CustomHashMap<K, V> implements Map<K, V> {
             next = e.next;
             if (next == null && aBucket != null) {
                 next = aBucket[index];
-                while (index < aBucket.length && next != null){
+                while (index < aBucket.length && next != null) {
                     next = aBucket[index++];
                 }
             }

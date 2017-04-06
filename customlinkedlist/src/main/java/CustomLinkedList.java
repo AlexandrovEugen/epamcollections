@@ -178,7 +178,7 @@ public class CustomLinkedList<E> implements List<E> {
             }
         }
         clear();
-        for (E e: toRemove){
+        for (E e : toRemove) {
             add(e);
         }
         return toRemove.isEmpty();
@@ -297,41 +297,42 @@ public class CustomLinkedList<E> implements List<E> {
 
     @Override
     public ListIterator<E> listIterator() {
-        return null;
+        return listIterator(0);
     }
 
     @Override
     public ListIterator<E> listIterator(int index) {
-        if (isEmpty()) {
-            throw new IllegalArgumentException();
-        }
         if (index < 0 || index > size) {
             throw new IllegalArgumentException();
         }
         return new ListIterator<E>() {
             private Node<E> iterator = getNodeByIndex(index);
-            private Node<E> prev = iterator.prev;
+            private Node<E> previous = iterator.prev;
             private int i = index;
 
 
             @Override
             public boolean hasNext() {
-                return iterator.hasNext();
+                return !isEmpty() && iterator.hasNext();
             }
 
             @Override
             public E next() {
+                previous = iterator;
+                iterator = iterator.next;
+                i++;
                 return iterator.next.getElem();
             }
 
             @Override
             public boolean hasPrevious() {
-                return prev.hasPrevious();
+                return previous != head && previous.hasPrevious();
             }
 
             @Override
             public E previous() {
-                return prev.getElem();
+                previous = previous.prev;
+                return previous.getElem();
             }
 
             @Override
@@ -406,12 +407,32 @@ public class CustomLinkedList<E> implements List<E> {
             this.elem = elem;
         }
 
-        public boolean hasNext() {
+        private boolean hasNext() {
             return next != null;
         }
 
-        public boolean hasPrevious() {
+        private boolean hasPrevious() {
             return prev != null;
         }
+
+        @Override
+        public int hashCode() {
+            int result = elem.hashCode();
+            result = 31 * result;
+            return result;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            Node<E> node = (Node<E>) o;
+            if (!elem.equals(node.getElem())) return false;
+            if (!prev.equals(node.prev)) return false;
+            if (!next.equals(node.next)) return false;
+            return hashCode() == node.hashCode();
+        }
+
+
     }
 }
